@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de nacionalidade</title>
+</head>
+<body>
+    <h1>Teste de nacionalidade</h1>
+    <p><label for="txt">Selecione ou escreva sua país de origem: </label><input type="text" name="txt" id="txt" list="paises"><datalist id="paises">
+        <option >Angola</option>
+        <option >Brasil</option>
+        <option >Colombia</option>
+        <option >Dinamarca</option>
+    </datalist>
+        
+    <input type="submit" value="Verificar" onclick="pais()"></p>
+    <div id="res">Resposta</div>
+
+    <script>
+        function pais(){
+            var texto = window.document.getElementById('txt')
+            var res = window.document.getElementById('res')
+
+            if (texto.value == 'Angola'){
+                res.innerText = `Se seu país é ${texto.value} então você é angolano`
+                
+            }else{
+                    res.innerText = `Se seu país é ${texto.value} não és angolano`
+                }
+
+
+        }
+
+    </script>
+</body>
+</html>

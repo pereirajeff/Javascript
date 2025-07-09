@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando valores</title>
+</head>
+<body>
+    <h1>Faça suas contas aí</h1>
+    <input type="number" name="tx1" id="tx1">
+    <input type="number" name="tx2" id="tx2">
+    <input type="submit" value="Calcular" onclick="somar()"> <!-- utilizar a tag onclick para evocar a funçaõ -->
+    <div id="res">Resultado</div>
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('tx1')// aqui é puxada a variavel da caixa
+            var tn2 = window.document.getElementById('tx2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value) // aqui é convertido em número
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerText  = `a soma de ${n1} e ${n2} é igual é ${s}` // usar a crase para template string
+        }
+
+    </script>
+</body>
+</html>

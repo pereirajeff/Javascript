@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de nacionalidade</title>
+</head>
+<body>
+    <h1>Teste sua nacionalidade</h1>
+    <p>Digite seu país de origem <input type="text" name="txt" id="nacionalidade"> <input type="submit" value="Checar" id="check" onclick="angolano()"></p>
+    <div id="res">Resultado de nacionalidade possívelmente angolana</div>
+    <script>
+        function angolano(){
+            var pais = window.document.getElementById('nacionalidade')
+            var res = window.document.getElementById('res')
+            if (pais.value == 'angola'){
+                res.innerText = `é ${res}`
+            } else  {
+                res.innerText = 'não é '
+            }
+        }
+    </script>
+</body>
+</html>
+
+`

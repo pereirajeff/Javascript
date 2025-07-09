@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding: 15px;
+}
+
+#teste{
+    background-color: white;
+    padding: 15px;
+    width: 50vw;
+    height: 20vh;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content:space-between;
+    align-content: space-around;
+    box-shadow: 2px 2px 7px 1px #00000069;
+    border-radius: 15px;
+}
+
+
+
+body{
+    background-color: aquamarine;
+}
+
+#res{
+    text-align:center ;
+    padding: 15px;
+}
+
+img{
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.562);
+}

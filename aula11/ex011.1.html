@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste velocidade</title>
+</head>
+<body>
+    <h1>Teste de velocidade</h1>
+    <p> <label for="txt">Digite a velocidade: </label><input type="number" name="txt"  id="txt"> <input type="submit" value="Avaliar a velocidade" onclick="velocidade()"></p>
+    <div id="res">Resposta</div>
+
+    <script>
+       function velocidade(){
+            var txt1 = window.document.getElementById('txt')
+            var res = window.document.getElementById('res')
+            var txt1 = Number(txt1.value)
+
+                if (txt1>50){
+                    res.innerText = `sua velocidade é de ${txt1} então você sera multado`
+                } else {
+                    res.innerText = `sua velocidade é de ${txt1} então você é lindo`
+                }
+
+        }
+
+        
+    </script>
+
+</body>
+</html>
