@@ -34,9 +34,22 @@ function teste(){
 
       } else if(sex[1].checked){
          var genero = 'Feminino'
+         if (idade >=0 && idade <10){
+            img.setAttribute('src','bebemenina.jpg')
+
+         } else if (idade <21){
+            img.setAttribute('src','jovemmulher.jpg')
+
+         } else if(idade <50){
+            img.setAttribute('src','mulher.jpg')
+         }
+         else{
+            img.setAttribute('src','velha.jpg')
+         }
       }
 
         res.innerHTML = `Genero ${genero}.Você tem ${idade} anos.`
+        
          res.appendChild(img)
       
     } 
